@@ -24,7 +24,9 @@ void ClosestWallServer::find_closest_wall_callback(const std::shared_ptr<custom_
     std::shared_ptr<custom_interfaces::srv::FindClosestWall::Response> response) {
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "FindClosestWall request received.");
         scanning = true;
-        while (scanning) {}
+        while (scanning) {
+            continue;
+        }
         bool rotateRight = getRotationDirection();
 
         auto msg = geometry_msgs::msg::Twist();
@@ -39,7 +41,9 @@ void ClosestWallServer::find_closest_wall_callback(const std::shared_ptr<custom_
         bool done = false;
         while (!done) {
             scanning = true;
-            while (scanning) {}
+            while (scanning) {
+                continue;
+            }
             done = isCorrectDirection();
         }
 
@@ -55,7 +59,7 @@ bool ClosestWallServer::getRotationDirection() {
     float closestDistance = scan_data->at(360-4) + scan_data->at(360-3) + scan_data->at(360-2) + scan_data->at(360-1) + scan_data->at(0) + scan_data->at(1) + scan_data->at(2) + scan_data->at(3) + scan_data->at(4);
     for (int i = 1; i < 40; i++) {
         float sum = 0.0;
-        for (int j = 9*i-4; i < 9*(i+1)-4; i++) {
+        for (int j = 9*i-4; j < 9*(i+1)-4; j++) {
             sum += scan_data->at(j);
         }
         if (sum < closestDistance) {
@@ -74,13 +78,14 @@ bool ClosestWallServer::isCorrectDirection() {
     float forwardDistance = scan_data->at(360-4) + scan_data->at(360-3) + scan_data->at(360-2) + scan_data->at(360-1) + scan_data->at(0) + scan_data->at(1) + scan_data->at(2) + scan_data->at(3) + scan_data->at(4);
     for (int i = 1; i < 40; i++) {
         float sum = 0.0;
-        for (int j = 9*i-4; i < 9*(i+1)-4; i++) {
+        for (int j = 9*i-4; j < 9*(i+1)-4; j++) {
             sum += scan_data->at(j);
         }
         if (sum < forwardDistance) {
             return false;
         }
     }
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Correct direction.");
     return true;
 }
 

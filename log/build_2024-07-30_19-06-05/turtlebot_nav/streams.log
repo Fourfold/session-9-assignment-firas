@@ -1,0 +1,32 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target find_closest_wall_server[0m
+[0.038s] [ 50%] Built target navigator_node
+[0.041s] [ 75%] [32mBuilding CXX object CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.o[0m
+[1.361s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:[m[K In member function ‘[01m[Kvoid ClosestWallServer::find_closest_wall_callback(std::shared_ptr<custom_interfaces::srv::FindClosestWall_Request_<std::allocator<void> > >, std::shared_ptr<custom_interfaces::srv::FindClosestWall_Response_<std::allocator<void> > >)[m[K’:
+[1.361s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:23:124:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.361s]    23 | void ClosestWallServer::find_closest_wall_callback([01;35m[Kconst std::shared_ptr<custom_interfaces::srv::FindClosestWall::Request> request[m[K,
+[1.361s]       |                                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.713s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[1.713s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[1.713s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.h:1[m[K,
+[1.713s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:1[m[K:
+[1.713s] /usr/include/c++/11/bits/stl_iterator.h: In instantiation of ‘[01m[Kstd::back_insert_iterator<_Container>& std::back_insert_iterator<_Container>::operator=(const typename _Container::value_type&) [with _Container = const std::vector<float>; typename _Container::value_type = float][m[K’:
+[1.713s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:385:18:[m[K   required from ‘[01m[Kstatic _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = const float*; _OI = std::back_insert_iterator<const std::vector<float> >][m[K’
+[1.713s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:495:30:[m[K   required from ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const float*; _OI = std::back_insert_iterator<const std::vector<float> >][m[K’
+[1.714s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:522:42:[m[K   required from ‘[01m[K_OI std::__copy_move_a1(_II, _II, _OI) [with bool _IsMove = false; _II = const float*; _OI = std::back_insert_iterator<const std::vector<float> >][m[K’
+[1.714s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:530:31:[m[K   required from ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const float*, std::vector<float> >; _OI = std::back_insert_iterator<const std::vector<float> >][m[K’
+[1.714s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:620:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<const float*, std::vector<float> >; _OI = std::back_insert_iterator<const std::vector<float> >][m[K’
+[1.714s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:18:13:[m[K   required from here
+[1.714s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:691:29:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst std::vector<float>[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.714s]   691 |         [01;31m[Kcontainer->push_back(__value)[m[K;
+[1.714s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[1.714s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.714s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.h:3[m[K,
+[1.714s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:1[m[K:
+[1.714s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = float; _Alloc = std::allocator<float>; std::vector<_Tp, _Alloc>::value_type = float][m[K’
+[1.714s]  1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[1.714s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.835s] gmake[2]: *** [CMakeFiles/find_closest_wall_server.dir/build.make:76: CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.o] Error 1
+[2.835s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/find_closest_wall_server.dir/all] Error 2
+[2.835s] gmake: *** [Makefile:146: all] Error 2
+[2.837s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
