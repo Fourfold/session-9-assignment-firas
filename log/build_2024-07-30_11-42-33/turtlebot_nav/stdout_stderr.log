@@ -1,0 +1,19 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/navigator.cpp.o[0m
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:37:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   37 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:[m[K In constructor ‘[01m[KNavigator::Navigator()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:15:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ksubscriber[m[K’
+   15 |         [01;31m[Ksubscriber[m[K = this->create_subription<sensor_msgs::msg::LaserScan>
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:[m[K In member function ‘[01m[Kvoid Navigator::scan_callback(const LaserScan&)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:24:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kdata[m[K’
+   24 |         if [01;31m[Kdata[m[K.ranges[0] < 0.5:
+      |            [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:20:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   20 |     void scan_callback([01;35m[Kconst sensor_msgs::msg::LaserScan & data[m[K) {
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

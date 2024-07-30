@@ -1,0 +1,26 @@
+[0.006s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.029s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.039s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/navigator.cpp.o[0m
+[4.162s] [100%] [32m[1mLinking CXX executable talker[0m
+[4.388s] [100%] Built target talker
+[4.397s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[4.410s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav
+[4.414s] -- Install configuration: ""
+[4.414s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/talker
+[4.415s] -- Set runtime path of "/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/talker" to ""
+[4.415s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/package_run_dependencies/turtlebot_nav
+[4.415s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/parent_prefix_path/turtlebot_nav
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.sh
+[4.416s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.dsv
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.sh
+[4.416s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.dsv
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.bash
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.sh
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.zsh
+[4.416s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.dsv
+[4.416s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.dsv
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/packages/turtlebot_nav
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig.cmake
+[4.416s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig-version.cmake
+[4.416s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.xml
+[4.417s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav

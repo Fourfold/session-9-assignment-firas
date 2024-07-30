@@ -1,0 +1,16 @@
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/talker
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/package_run_dependencies/turtlebot_nav
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/parent_prefix_path/turtlebot_nav
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.sh
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.dsv
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.sh
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.dsv
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.bash
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.sh
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.zsh
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.dsv
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.dsv
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/packages/turtlebot_nav
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig.cmake
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig-version.cmake
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.xml

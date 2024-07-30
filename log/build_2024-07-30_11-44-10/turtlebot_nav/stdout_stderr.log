@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/navigator.cpp.o[0m
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:40:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   40 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:[m[K In constructor ‘[01m[KNavigator::Navigator()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:15:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Navigator[m[K’ has no member named ‘[01m[Kcreate_subription[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+   15 |         subscriber = this->[01;31m[Kcreate_subription[m[K<sensor_msgs::msg::LaserScan>
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kcreate_subscription[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:15:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   15 |       subscriber = this->create_subription<sensor_msgs::msg::LaserScan[01;31m[K>[m[K
+      |                                                                       [01;31m[K^[m[K
+
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:16:10:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   16 |         ([01;35m[K"/scan"[m[K, 10, std::bind(&Navigator::scan_callback, this, std::placeholders::_1));
+      |          [01;35m[K^~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:16:87:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   16 | 10, std::bind(&Navigator::scan_callback, this, std::placeholders::_1[01;35m[K)[m[K);
+      |                                                                     [01;35m[K^[m[K
+
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
