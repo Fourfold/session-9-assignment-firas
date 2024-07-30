@@ -1,0 +1,12 @@
+[0.006s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.029s] [35m[1mConsolidate compiler generated dependencies of target navigator_node[0m
+[0.039s] [ 50%] [32mBuilding CXX object CMakeFiles/navigator_node.dir/src/navigator.cpp.o[0m
+[0.144s] In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:1[m[K:
+[0.144s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.h:5:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/srv/FindClosestWall.hpp: No such file or directory
+[0.144s]     5 | #include [01;31m[K"custom_interfaces/srv/FindClosestWall.hpp"[m[K
+[0.145s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.145s] compilation terminated.
+[0.146s] gmake[2]: *** [CMakeFiles/navigator_node.dir/build.make:76: CMakeFiles/navigator_node.dir/src/navigator.cpp.o] Error 1
+[0.146s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigator_node.dir/all] Error 2
+[0.146s] gmake: *** [Makefile:146: all] Error 2
+[0.148s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

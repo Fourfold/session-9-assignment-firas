@@ -1,0 +1,23 @@
+[0.007s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/custom_interfaces -- -j16 -l16
+[0.037s] [  2%] Built target custom_interfaces__cpp
+[0.037s] [ 12%] Built target custom_interfaces__rosidl_generator_c
+[0.044s] [ 12%] Built target ament_cmake_python_copy_custom_interfaces
+[0.050s] [ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.050s] [ 41%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.050s] [ 43%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[0.051s] [ 61%] Built target custom_interfaces__rosidl_typesupport_c
+[0.051s] [ 64%] Built target custom_interfaces__rosidl_typesupport_cpp
+[0.051s] [ 74%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.063s] [ 74%] Built target custom_interfaces
+[0.075s] [ 76%] Built target custom_interfaces__py
+[0.088s] [ 84%] Built target custom_interfaces__rosidl_generator_py
+[0.101s] [ 94%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.101s] [ 94%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[0.101s] [100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.175s] running egg_info
+[0.175s] writing custom_interfaces.egg-info/PKG-INFO
+[0.175s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[0.175s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[0.177s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.177s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.193s] [100%] Built target ament_cmake_python_build_custom_interfaces_egg

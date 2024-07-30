@@ -11,9 +11,10 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(custom_interfaces REQUIRED)
 
-add_executable(talker src/navigator.cpp)
-ament_target_dependencies(navigator_node rclcpp std_msgs geometry_msgs sensor_msgs)
+add_executable(navigator_node src/navigator.cpp)
+ament_target_dependencies(navigator_node rclcpp std_msgs geometry_msgs sensor_msgs custom_interfaces)
 
 install(TARGETS
   navigator_node

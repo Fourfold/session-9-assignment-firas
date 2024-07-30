@@ -198,24 +198,24 @@ turtlebot_nav_uninstall/fast:
 .PHONY : turtlebot_nav_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named navigator_node
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+navigator_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigator_node
+.PHONY : navigator_node
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+navigator_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator_node.dir/build.make CMakeFiles/navigator_node.dir/build
+.PHONY : navigator_node/fast
 
 src/navigator.o: src/navigator.cpp.o
 .PHONY : src/navigator.o
 
 # target to build an object file
 src/navigator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/navigator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator_node.dir/build.make CMakeFiles/navigator_node.dir/src/navigator.cpp.o
 .PHONY : src/navigator.cpp.o
 
 src/navigator.i: src/navigator.cpp.i
@@ -223,7 +223,7 @@ src/navigator.i: src/navigator.cpp.i
 
 # target to preprocess a source file
 src/navigator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/navigator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator_node.dir/build.make CMakeFiles/navigator_node.dir/src/navigator.cpp.i
 .PHONY : src/navigator.cpp.i
 
 src/navigator.s: src/navigator.cpp.s
@@ -231,7 +231,7 @@ src/navigator.s: src/navigator.cpp.s
 
 # target to generate assembly for a file
 src/navigator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/navigator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator_node.dir/build.make CMakeFiles/navigator_node.dir/src/navigator.cpp.s
 .PHONY : src/navigator.cpp.s
 
 # Help Target
@@ -249,7 +249,7 @@ help:
 	@echo "... test"
 	@echo "... turtlebot_nav_uninstall"
 	@echo "... uninstall"
-	@echo "... talker"
+	@echo "... navigator_node"
 	@echo "... src/navigator.o"
 	@echo "... src/navigator.i"
 	@echo "... src/navigator.s"

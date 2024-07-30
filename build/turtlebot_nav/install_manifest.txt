@@ -1,4 +1,4 @@
-/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/talker
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/navigator_node
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/package_run_dependencies/turtlebot_nav
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/parent_prefix_path/turtlebot_nav
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.sh
