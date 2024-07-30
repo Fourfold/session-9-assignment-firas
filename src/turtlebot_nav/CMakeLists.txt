@@ -12,12 +12,18 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(custom_interfaces REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
 
 add_executable(navigator_node src/navigator.cpp)
-ament_target_dependencies(navigator_node rclcpp std_msgs geometry_msgs sensor_msgs custom_interfaces)
+ament_target_dependencies(navigator_node rclcpp geometry_msgs sensor_msgs custom_interfaces)
+
+add_executable(find_closest_wall_server src/closest_wall_server.cpp)
+ament_target_dependencies(find_closest_wall_server rclcpp geometry_msgs sensor_msgs custom_interfaces)
 
 install(TARGETS
   navigator_node
+  find_closest_wall_server
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

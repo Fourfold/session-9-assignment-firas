@@ -8,11 +8,11 @@ def generate_launch_description():
             executable='navigator_node',
             name='navigator_node'
         ),
-        # Node(
-        #     package='turtlebot_nav',
-        #     executable='find_closest_wall_server',
-        #     name='find_closest_wall_server'
-        # ),
+        Node(
+            package='turtlebot_nav',
+            executable='find_closest_wall_server',
+            name='find_closest_wall_server'
+        ),
         # Node(
         #     package='turtlebot_nav',
         #     executable='lap_server',

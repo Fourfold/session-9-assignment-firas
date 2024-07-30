@@ -1,0 +1,25 @@
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:[m[K In constructor ‘[01m[KClosestWallServer::ClosestWallServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:9:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KClosestWallServer::create_service<custom_interfaces::srv::FindClosestWall>(const char [18], std::_Bind_helper<false, void (ClosestWallServer::*)(std::shared_ptr<custom_interfaces::srv::FindClosestWall_Request_<std::allocator<void> > >, std::shared_ptr<custom_interfaces::srv::FindClosestWall_Response_<std::allocator<void> > >), ClosestWallServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, rclcpp::CallbackGroup::SharedPtr&)[m[K’
+    8 |     service = [01;31m[Kthis->create_service<custom_interfaces::srv::FindClosestWall>[m[K
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+    9 | [01;31m[K        ("find_closest_wall", std::bind(&ClosestWallServer::find_closest_wall_callback, this, std::placeholders::_1, std::placeholders::_2), service_cb_group)[m[K;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.h:5[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  267 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:9:142:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((ClosestWallServer*)this)->ClosestWallServer::service_cb_group[m[K’ (type ‘[01m[Krclcpp::CallbackGroup::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::CallbackGroup>[m[K’}) to type ‘[01m[Kconst rmw_qos_profile_t&[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s&[m[K’}
+    9 |         ("find_closest_wall", std::bind(&ClosestWallServer::find_closest_wall_callback, this, std::placeholders::_1, std::placeholders::_2), [01;36m[Kservice_cb_group[m[K);
+      |                                                                                                                                              [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:[m[K In member function ‘[01m[Kvoid ClosestWallServer::find_closest_wall_callback(std::shared_ptr<custom_interfaces::srv::FindClosestWall_Request_<std::allocator<void> > >, std::shared_ptr<custom_interfaces::srv::FindClosestWall_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/closest_wall_server.cpp:24:124:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   24 | void ClosestWallServer::find_closest_wall_callback([01;35m[Kconst std::shared_ptr<custom_interfaces::srv::FindClosestWall::Request> request[m[K,
+      |                                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/find_closest_wall_server.dir/build.make:76: CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/find_closest_wall_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

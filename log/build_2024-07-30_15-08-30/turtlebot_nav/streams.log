@@ -1,0 +1,31 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.029s] [35m[1mConsolidate compiler generated dependencies of target navigator_node[0m
+[0.038s] [ 50%] [32mBuilding CXX object CMakeFiles/navigator_node.dir/src/navigator.cpp.o[0m
+[1.158s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:[m[K In constructor ‘[01m[KNavigator::Navigator()[m[K’:
+[1.158s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:19:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin_until_future_complete(Navigator*, rclcpp::Client<custom_interfaces::srv::FindClosestWall>::FutureAndRequestId&)[m[K’
+[1.158s]    19 |     if ([01;31m[Krclcpp::spin_until_future_complete(this, result)[m[K ==
+[1.158s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.158s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.158s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.h:5[m[K,
+[1.158s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:1[m[K:
+[1.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>)[m[K’
+[1.158s]   105 | [01;36m[Kspin_until_future_complete[m[K(
+[1.158s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.158s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:19:44:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K(Navigator*)this[m[K’ (type ‘[01m[KNavigator*[m[K’) to type ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>[m[K’}
+[1.158s]    19 |     if (rclcpp::spin_until_future_complete([01;36m[Kthis[m[K, result) ==
+[1.158s]       |                                            [01;36m[K^~~~[m[K
+[1.158s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.158s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.h:5[m[K,
+[1.158s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:1[m[K:
+[1.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(std::shared_ptr<_Tp>, const FutureT&, std::chrono::duration<_Rep2, _Period2>)[m[K’
+[1.158s]   117 | [01;36m[Kspin_until_future_complete[m[K(
+[1.158s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.158s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/navigator.cpp:19:43:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::shared_ptr<_Tp>[m[K’ and ‘[01m[KNavigator*[m[K’
+[1.158s]    19 |     if ([01;36m[Krclcpp::spin_until_future_complete(this, result)[m[K ==
+[1.158s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.449s] gmake[2]: *** [CMakeFiles/navigator_node.dir/build.make:76: CMakeFiles/navigator_node.dir/src/navigator.cpp.o] Error 1
+[2.449s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/navigator_node.dir/all] Error 2
+[2.449s] gmake: *** [Makefile:146: all] Error 2
+[2.451s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

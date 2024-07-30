@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target find_closest_wall_server[0m
+[35m[1mConsolidate compiler generated dependencies of target navigator_node[0m
+[ 50%] Built target navigator_node
+[ 75%] [32mBuilding CXX object CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.o[0m

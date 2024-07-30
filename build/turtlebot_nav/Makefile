@@ -210,6 +210,43 @@ navigator_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator_node.dir/build.make CMakeFiles/navigator_node.dir/build
 .PHONY : navigator_node/fast
 
+#=============================================================================
+# Target rules for targets named find_closest_wall_server
+
+# Build rule for target.
+find_closest_wall_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 find_closest_wall_server
+.PHONY : find_closest_wall_server
+
+# fast build rule for target.
+find_closest_wall_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_closest_wall_server.dir/build.make CMakeFiles/find_closest_wall_server.dir/build
+.PHONY : find_closest_wall_server/fast
+
+src/closest_wall_server.o: src/closest_wall_server.cpp.o
+.PHONY : src/closest_wall_server.o
+
+# target to build an object file
+src/closest_wall_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_closest_wall_server.dir/build.make CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.o
+.PHONY : src/closest_wall_server.cpp.o
+
+src/closest_wall_server.i: src/closest_wall_server.cpp.i
+.PHONY : src/closest_wall_server.i
+
+# target to preprocess a source file
+src/closest_wall_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_closest_wall_server.dir/build.make CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.i
+.PHONY : src/closest_wall_server.cpp.i
+
+src/closest_wall_server.s: src/closest_wall_server.cpp.s
+.PHONY : src/closest_wall_server.s
+
+# target to generate assembly for a file
+src/closest_wall_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_closest_wall_server.dir/build.make CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.s
+.PHONY : src/closest_wall_server.cpp.s
+
 src/navigator.o: src/navigator.cpp.o
 .PHONY : src/navigator.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... turtlebot_nav_uninstall"
 	@echo "... uninstall"
+	@echo "... find_closest_wall_server"
 	@echo "... navigator_node"
+	@echo "... src/closest_wall_server.o"
+	@echo "... src/closest_wall_server.i"
+	@echo "... src/closest_wall_server.s"
 	@echo "... src/navigator.o"
 	@echo "... src/navigator.i"
 	@echo "... src/navigator.s"

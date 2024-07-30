@@ -146,12 +146,12 @@ navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspectio
 navigator_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 navigator_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 navigator_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 navigator_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 navigator_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 navigator_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 navigator_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 navigator_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 navigator_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
