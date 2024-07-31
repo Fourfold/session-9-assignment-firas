@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_client[0m
+[ 50%] Built target measure_lap_time_server
+[ 50%] Built target find_closest_wall_server
+[ 75%] Built target navigator_node
+[ 87%] [32mBuilding CXX object CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o[0m
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:78:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<LapTimeClient>[m[K’ has no member named ‘[01m[Ksend_goal[m[K’
+   78 |     client_node.[01;31m[Ksend_goal[m[K();
+      |                 [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_client.dir/build.make:76: CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/measure_lap_time_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

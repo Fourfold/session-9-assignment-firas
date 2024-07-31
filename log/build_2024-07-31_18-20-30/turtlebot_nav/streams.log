@@ -1,0 +1,69 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[0.039s] [ 75%] Built target measure_lap_time_client
+[0.039s] [ 75%] Built target find_closest_wall_server
+[0.039s] [ 75%] Built target navigator_node
+[0.042s] [ 87%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[1.474s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[1.475s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:107:[m[K [01;31m[Kerror: [m[Kclass template argument deduction failed:
+[1.475s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsBase()[01;31m[K)[m[K;
+[1.475s]       |                                                                                                           [01;31m[K^[m[K
+[1.475s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:107:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsBase)[m[K’
+[1.475s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.475s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+[1.475s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[1.475s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Allocator> SubscriptionOptionsWithAllocator(const rclcpp::SubscriptionOptionsBase&)-> rclcpp::SubscriptionOptionsWithAllocator<Allocator>[m[K’
+[1.475s]   103 |   explicit [01;36m[KSubscriptionOptionsWithAllocator[m[K(
+[1.476s]       |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.476s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:103:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.476s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:107:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KAllocator[m[K’
+[1.476s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsBase()[01;36m[K)[m[K;
+[1.476s]       |                                                                                                           [01;36m[K^[m[K
+[1.476s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.476s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+[1.476s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[1.476s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:100:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Allocator> SubscriptionOptionsWithAllocator()-> rclcpp::SubscriptionOptionsWithAllocator<Allocator>[m[K’
+[1.476s]   100 |   [01;36m[KSubscriptionOptionsWithAllocator[m[K() {}
+[1.476s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.476s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:100:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.476s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:107:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[1.476s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsBase()[01;36m[K)[m[K;
+[1.477s]       |                                                                                                           [01;36m[K^[m[K
+[1.477s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.477s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+[1.477s]                  from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[1.477s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:91:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Allocator> SubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsWithAllocator<Allocator>)-> rclcpp::SubscriptionOptionsWithAllocator<Allocator>[m[K’
+[1.477s]    91 | struct [01;36m[KSubscriptionOptionsWithAllocator[m[K : public SubscriptionOptionsBase
+[1.477s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.477s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:91:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.477s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:107:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::SubscriptionOptionsBase[m[K’ is not derived from ‘[01m[Krclcpp::SubscriptionOptionsWithAllocator<Allocator>[m[K’
+[1.477s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator(rclcpp::SubscriptionOptionsBase()[01;36m[K)[m[K;
+[1.478s]       |                                                                                                           [01;36m[K^[m[K
+[1.890s] gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+[1.890s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+[1.890s] gmake: *** [Makefile:146: all] Error 2
+[1.892s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

@@ -1,0 +1,17 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[0.038s] [ 25%] Built target navigator_node
+[0.039s] [ 50%] Built target find_closest_wall_server
+[0.039s] [ 75%] Built target measure_lap_time_client
+[0.042s] [ 87%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[1.505s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[1.505s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:74:[m[K [01;31m[Kerror: [m[K‘[01m[KAllocatorT[m[K’ was not declared in this scope
+[1.506s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator<[01;31m[KAllocatorT[m[K>();
+[1.506s]       |                                                                          [01;31m[K^~~~~~~~~~[m[K
+[1.506s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:84:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.506s]    20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator<AllocatorT[01;31m[K>[m[K();
+[1.506s]       |                                                                                    [01;31m[K^[m[K
+[1.934s] gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+[1.934s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+[1.934s] gmake: *** [Makefile:146: all] Error 2
+[1.936s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

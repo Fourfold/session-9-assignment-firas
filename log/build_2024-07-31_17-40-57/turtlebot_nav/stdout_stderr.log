@@ -1,0 +1,163 @@
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found custom_interfaces: 0.0.0 (/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces/share/custom_interfaces/cmake)
+-- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[35m[1mConsolidate compiler generated dependencies of target find_closest_wall_server[0m
+[35m[1mConsolidate compiler generated dependencies of target navigator_node[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o[0m
+[ 62%] Built target navigator_node
+[ 62%] Built target find_closest_wall_server
+[ 75%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:20:65:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kusing GoalHandleMeasureLapTime = class rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} does not name a type
+   20 |     void goal_response_callback(const GoalHandleMeasureLapTime::[01;31m[KSharedPtr[m[K & goal_handle);
+      |                                                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action::GoalHandleMeasureLapTime::SharedPtr[m[K’ has not been declared
+   22 |         [01;31m[KGoalHandleMeasureLapTime[m[K::SharedPtr,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:25:58:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResult[m[K’ in ‘[01m[Kusing GoalHandleMeasureLapTime = class rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} does not name a type
+   25 |     void result_callback(const GoalHandleMeasureLapTime::[01;31m[KWrappedResult[m[K & result);
+      |                                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K In constructor ‘[01m[KLapTimeClient::LapTimeClient()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:7:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+    7 |     )
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+    8 | [32m[K}[m[K
+      | [32m[K~[m[K     
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K In function ‘[01m[Kvoid send_goal()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:15:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid LapTimeClient::goal_response_callback(const int&)[m[K’ is private within this context
+   15 |         &LapTimeClient::[01;31m[Kgoal_response_callback[m[K,
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:20:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   20 |     void [01;36m[Kgoal_response_callback[m[K(const GoalHandleMeasureLapTime::SharedPtr & goal_handle);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:16:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   16 |         [01;31m[Kthis[m[K,
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:20:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid LapTimeClient::feedback_callback(int, std::shared_ptr<const custom_interfaces::action::MeasureLapTime_Feedback_<std::allocator<void> > >)[m[K’ is private within this context
+   20 |         &LapTimeClient::[01;31m[Kfeedback_callback[m[K,
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:21:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   21 |     void [01;36m[Kfeedback_callback[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:21:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   21 |         [01;31m[Kthis[m[K,
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:26:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid LapTimeClient::result_callback(const int&)[m[K’ is private within this context
+   26 |         &LapTimeClient::[01;31m[Kresult_callback[m[K,
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:25:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   25 |     void [01;36m[Kresult_callback[m[K(const GoalHandleMeasureLapTime::WrappedResult & result);
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:27:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   27 |         [01;31m[Kthis[m[K,
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:30:5:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   30 |     [01;31m[Kthis[m[K->action_client->async_send_goal(goal_msg, send_goal_options);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K At global scope:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:33:61:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kusing GoalHandleMeasureLapTime = class rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} does not name a type
+   33 | void goal_response_callback(const GoalHandleMeasureLapTime::[01;31m[KSharedPtr[m[K & goal_handle) {
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:41:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kfeedback_callback[m[K’ declared void
+   41 | void [01;31m[Kfeedback_callback[m[K(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:42:31:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ is not a member of ‘[01m[KGoalHandleMeasureLapTime[m[K’ {aka ‘[01m[Krclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’}
+   42 |     GoalHandleMeasureLapTime::[01;31m[KSharedPtr[m[K,
+      |                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:43:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   43 |     [01;31m[Kconst[m[K std::shared_ptr<const MeasureLapTime::Feedback> feedback
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:50:54:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResult[m[K’ in ‘[01m[Kusing GoalHandleMeasureLapTime = class rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} does not name a type
+   50 | void result_callback(const GoalHandleMeasureLapTime::[01;31m[KWrappedResult[m[K & result) {
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K In function ‘[01m[Kvoid result_callback(const int&)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:51:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcode[m[K’ in ‘[01m[Kresult[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   51 |     switch (result.[01;31m[Kcode[m[K) {
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:65:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback[m[K’ was not declared in this scope
+   65 |     ss << "Total lap time: " << round([01;31m[Kfeedback[m[K->elapsed_time) << " seconds.";
+      |                                       [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:8[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:66:53:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::basic_stringstream<char>::__string_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+   66 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), [01;31m[Kss.str()[m[K);
+      |                                               [01;31m[K~~~~~~^~[m[K
+      |                                                     [01;31m[K|[m[K
+      |                                                     [01;31m[Kstd::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}[m[K
+In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:8[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+  479 |   [01;36m[Kconst char * format[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:74:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigator[m[K’ was not declared in this scope
+   74 |     auto client_node = std::make_shared<[01;31m[KNavigator[m[K>();
+      |                                         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:74:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   74 |     auto client_node = [01;31m[Kstd::make_shared<Navigator>()[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_client.cpp:74:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |     auto client_node = [01;31m[Kstd::make_shared<Navigator>()[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_client.dir/build.make:76: CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/measure_lap_time_client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] [32m[1mLinking CXX executable measure_lap_time_server[0m
+[ 87%] Built target measure_lap_time_server
+gmake: *** [Makefile:146: all] Error 2

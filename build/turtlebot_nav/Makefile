@@ -236,6 +236,19 @@ measure_lap_time_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/measure_lap_time_server.dir/build.make CMakeFiles/measure_lap_time_server.dir/build
 .PHONY : measure_lap_time_server/fast
 
+#=============================================================================
+# Target rules for targets named measure_lap_time_client
+
+# Build rule for target.
+measure_lap_time_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 measure_lap_time_client
+.PHONY : measure_lap_time_client
+
+# fast build rule for target.
+measure_lap_time_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measure_lap_time_client.dir/build.make CMakeFiles/measure_lap_time_client.dir/build
+.PHONY : measure_lap_time_client/fast
+
 src/closest_wall_server.o: src/closest_wall_server.cpp.o
 .PHONY : src/closest_wall_server.o
 
@@ -259,6 +272,30 @@ src/closest_wall_server.s: src/closest_wall_server.cpp.s
 src/closest_wall_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_closest_wall_server.dir/build.make CMakeFiles/find_closest_wall_server.dir/src/closest_wall_server.cpp.s
 .PHONY : src/closest_wall_server.cpp.s
+
+src/lap_time_client.o: src/lap_time_client.cpp.o
+.PHONY : src/lap_time_client.o
+
+# target to build an object file
+src/lap_time_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measure_lap_time_client.dir/build.make CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o
+.PHONY : src/lap_time_client.cpp.o
+
+src/lap_time_client.i: src/lap_time_client.cpp.i
+.PHONY : src/lap_time_client.i
+
+# target to preprocess a source file
+src/lap_time_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measure_lap_time_client.dir/build.make CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.i
+.PHONY : src/lap_time_client.cpp.i
+
+src/lap_time_client.s: src/lap_time_client.cpp.s
+.PHONY : src/lap_time_client.s
+
+# target to generate assembly for a file
+src/lap_time_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measure_lap_time_client.dir/build.make CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.s
+.PHONY : src/lap_time_client.cpp.s
 
 src/lap_time_server.o: src/lap_time_server.cpp.o
 .PHONY : src/lap_time_server.o
@@ -324,11 +361,15 @@ help:
 	@echo "... turtlebot_nav_uninstall"
 	@echo "... uninstall"
 	@echo "... find_closest_wall_server"
+	@echo "... measure_lap_time_client"
 	@echo "... measure_lap_time_server"
 	@echo "... navigator_node"
 	@echo "... src/closest_wall_server.o"
 	@echo "... src/closest_wall_server.i"
 	@echo "... src/closest_wall_server.s"
+	@echo "... src/lap_time_client.o"
+	@echo "... src/lap_time_client.i"
+	@echo "... src/lap_time_client.s"
 	@echo "... src/lap_time_server.o"
 	@echo "... src/lap_time_server.i"
 	@echo "... src/lap_time_server.s"

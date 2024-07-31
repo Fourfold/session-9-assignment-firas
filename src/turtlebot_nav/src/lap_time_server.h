@@ -6,7 +6,6 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
-#include "rclcpp_components/register_node_macro.hpp"
 #include "custom_interfaces/action/measure_lap_time.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 
@@ -25,6 +24,7 @@ private:
     void execute(const std::shared_ptr<GoalHandleMeasureLapTime> goal_handle);
     void publish_elapsed_time();
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscriber;
+    rclcpp::CallbackGroup::SharedPtr subscription_cb_group;
     rclcpp::CallbackGroup::SharedPtr service_cb_group;
     rclcpp::CallbackGroup::SharedPtr timer_cb_group;
     rclcpp::TimerBase::SharedPtr timer;

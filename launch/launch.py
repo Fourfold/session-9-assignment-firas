@@ -13,14 +13,14 @@ def generate_launch_description():
             executable='find_closest_wall_server',
             name='find_closest_wall_server'
         ),
-        # Node(
-        #     package='turtlebot_nav',
-        #     executable='lap_server',
-        #     name='lap_server'
-        # ),
-        # Node(
-        #     package='turtlebot_nav',
-        #     executable='lap_client',
-        #     name='lap_client'
-        # ),
+        Node(
+            package='turtlebot_nav',
+            executable='measure_lap_time_server',
+            name='measure_lap_time_server'
+        ),
+        Node(
+            package='turtlebot_nav',
+            executable='measure_lap_time_client',
+            name='measure_lap_time_client'
+        ),
     ])

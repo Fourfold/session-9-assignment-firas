@@ -1,0 +1,11 @@
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:74:[m[K [01;31m[Kerror: [m[K‘[01m[KAllocator[m[K’ was not declared in this scope; did you mean ‘[01m[Kalloca[m[K’?
+   20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator<[01;31m[KAllocator[m[K>();
+      |                                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                          [32m[Kalloca[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:20:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     auto subscription_options = rclcpp::SubscriptionOptionsWithAllocator<Allocator[01;31m[K>[m[K();
+      |                                                                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -6,6 +6,7 @@ using GoalHandleMeasureLapTime = rclcpp_action::ServerGoalHandle<MeasureLapTime>
 LapTimeServer::LapTimeServer() : Node("lap_time_server") {
     using namespace std::placeholders;
     service_cb_group = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    subscription_cb_group = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
     timer_cb_group = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
     this->action_server = rclcpp_action::create_server<MeasureLapTime>(
         this,
@@ -16,10 +17,13 @@ LapTimeServer::LapTimeServer() : Node("lap_time_server") {
         rcl_action_server_get_default_options(),
         service_cb_group
     );
-    subscriber = this->create_subscription<nav_msgs::msg::Odometry>
-        ("/scan",
+    auto subscription_options = rclcpp::SubscriptionOptions();
+    subscription_options.callback_group = subscription_cb_group;
+    subscriber = this->create_subscription<nav_msgs::msg::Odometry> (
+        "/odom",
         10,
-        std::bind(&LapTimeServer::odometry_callback, this, _1)
+        std::bind(&LapTimeServer::odometry_callback, this, _1),
+        subscription_options
     );
     x = 2.0;
     y = 2.0;
@@ -55,7 +59,9 @@ void LapTimeServer::handle_accepted(const std::shared_ptr<GoalHandleMeasureLapTi
 void LapTimeServer::execute(const std::shared_ptr<GoalHandleMeasureLapTime> goal_handle) {
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for robot to reach starting point...");
     while (abs(x) > 0.1 && abs(y) > 0.1) continue;
-    while (abs(x) < 0.1 && abs(y) < 0.1) continue;
+    while (abs(x) < 0.1 || abs(y) < 0.1) continue;
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Robot reached starting point.");
 
     execute_goal_handle = goal_handle;
     start_time = current_time;
@@ -64,13 +70,16 @@ void LapTimeServer::execute(const std::shared_ptr<GoalHandleMeasureLapTime> goal
     using namespace std::chrono_literals;
     timer = this->create_wall_timer(
         500ms,
-        std::bind(&LapTimeServer::publish_elapsed_time, this)
+        std::bind(&LapTimeServer::publish_elapsed_time, this),
+        timer_cb_group
     );
 
     for (int i = 0; i < 4; i++) {
         while (abs(x) > 0.1 && abs(y) > 0.1) continue;
-        while (abs(x) < 0.1 && abs(y) < 0.1) continue;
+        while (abs(x) < 0.1 || abs(y) < 0.1) continue;
     }
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Robot reached finish point.");
 
     timer = NULL;
 

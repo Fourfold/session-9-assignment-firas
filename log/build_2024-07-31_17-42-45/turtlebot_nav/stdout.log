@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_client[0m
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[ 50%] Built target find_closest_wall_server
+[ 50%] Built target navigator_node
+[ 62%] [32mBuilding CXX object CMakeFiles/measure_lap_time_client.dir/src/lap_time_client.cpp.o[0m
+[ 87%] Built target measure_lap_time_server

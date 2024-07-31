@@ -13,7 +13,6 @@ find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(custom_interfaces REQUIRED)
 find_package(rclcpp_action REQUIRED)
-find_package(rclcpp_components REQUIRED)
 find_package(nav_msgs REQUIRED)
 
 add_executable(navigator_node src/navigator.cpp)
@@ -23,12 +22,16 @@ add_executable(find_closest_wall_server src/closest_wall_server.cpp)
 ament_target_dependencies(find_closest_wall_server rclcpp geometry_msgs sensor_msgs custom_interfaces)
 
 add_executable(measure_lap_time_server src/lap_time_server.cpp)
-ament_target_dependencies(measure_lap_time_server rclcpp custom_interfaces rclcpp_action rclcpp_components nav_msgs)
+ament_target_dependencies(measure_lap_time_server rclcpp custom_interfaces rclcpp_action nav_msgs)
+
+add_executable(measure_lap_time_client src/lap_time_client.cpp)
+ament_target_dependencies(measure_lap_time_client rclcpp custom_interfaces rclcpp_action)
 
 install(TARGETS
   navigator_node
   find_closest_wall_server
   measure_lap_time_server
+  measure_lap_time_client
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

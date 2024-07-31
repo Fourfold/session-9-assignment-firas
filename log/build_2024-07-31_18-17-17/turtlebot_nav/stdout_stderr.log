@@ -1,0 +1,44 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[ 25%] Built target find_closest_wall_server
+[ 50%] Built target measure_lap_time_client
+[ 75%] Built target navigator_node
+[ 87%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:23:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLapTimeServer::create_subscription<nav_msgs::msg::Odometry>(const char [6], int, std::_Bind_helper<false, void (LapTimeServer::*)(const nav_msgs::msg::Odometry_<std::allocator<void> >&), LapTimeServer*, const std::_Placeholder<1>&>::type, rclcpp::SubscriptionOptionsBase&)[m[K’
+   22 |     subscriber = [01;31m[Kthis->create_subscription<nav_msgs::msg::Odometry>[m[K
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   23 | [01;31m[K        ("/scan",[m[K
+      |         [01;31m[K^~~~~~~~~[m[K
+   24 | [01;31m[K        10,[m[K
+      |         [01;31m[K~~~[m[K
+   25 | [01;31m[K        std::bind(&LapTimeServer::odometry_callback, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;31m[K        subscription_options[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K    
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:23:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::SubscriptionOptionsBase[m[K’ is not derived from ‘[01m[Kconst rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>[m[K’
+   22 |     subscriber = [01;36m[Kthis->create_subscription<nav_msgs::msg::Odometry>[m[K
+      |                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   23 | [01;36m[K        ("/scan",[m[K
+      |         [01;36m[K^~~~~~~~~[m[K
+   24 | [01;36m[K        10,[m[K
+      |         [01;36m[K~~~[m[K
+   25 | [01;36m[K        std::bind(&LapTimeServer::odometry_callback, this, _1),[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;36m[K        subscription_options[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;36m[K    )[m[K;
+      |     [01;36m[K~[m[K    
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
