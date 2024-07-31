@@ -20,7 +20,7 @@ void ClosestWallServer::scan_callback(const sensor_msgs::msg::LaserScan & data) 
     }
 }
 
-void ClosestWallServer::find_closest_wall_callback(const std::shared_ptr<custom_interfaces::srv::FindClosestWall::Request> request,
+void ClosestWallServer::find_closest_wall_callback(const std::shared_ptr<custom_interfaces::srv::FindClosestWall::Request>,
     std::shared_ptr<custom_interfaces::srv::FindClosestWall::Response> response) {
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "FindClosestWall request received.");
         scanning = true;
@@ -81,7 +81,7 @@ bool ClosestWallServer::isCorrectDirection() {
         for (int j = 9*i-4; j < 9*(i+1)-4; j++) {
             sum += scan_data->at(j);
         }
-        if (sum < forwardDistance) {
+        if (forwardDistance - sum > 0.2) {
             return false;
         }
     }
