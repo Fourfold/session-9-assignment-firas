@@ -1,0 +1,30 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[0.038s] [ 66%] Built target find_closest_wall_server
+[0.038s] [ 66%] Built target navigator_node
+[0.042s] [ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[4.706s] [100%] [32m[1mLinking CXX executable measure_lap_time_server[0m
+[4.949s] [100%] Built target measure_lap_time_server
+[4.959s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '0': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[4.976s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --install /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav
+[4.980s] -- Install configuration: ""
+[4.980s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/navigator_node
+[4.980s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/find_closest_wall_server
+[4.980s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/measure_lap_time_server
+[4.983s] -- Set runtime path of "/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/lib/turtlebot_nav/measure_lap_time_server" to ""
+[4.983s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/package_run_dependencies/turtlebot_nav
+[4.983s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/parent_prefix_path/turtlebot_nav
+[4.983s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.sh
+[4.983s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/ament_prefix_path.dsv
+[4.983s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.sh
+[4.984s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/environment/path.dsv
+[4.984s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.bash
+[4.984s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.sh
+[4.984s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.zsh
+[4.984s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/local_setup.dsv
+[4.984s] -- Installing: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.dsv
+[4.985s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/ament_index/resource_index/packages/turtlebot_nav
+[4.985s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig.cmake
+[4.985s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/cmake/turtlebot_navConfig-version.cmake
+[4.986s] -- Up-to-date: /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav/share/turtlebot_nav/package.xml
+[4.986s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '0': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --install /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav

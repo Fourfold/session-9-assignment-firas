@@ -1,0 +1,15 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[0.038s] [ 33%] Built target find_closest_wall_server
+[0.038s] [ 66%] Built target navigator_node
+[0.042s] [ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[4.800s] [100%] [32m[1mLinking CXX executable measure_lap_time_server[0m
+[5.037s] /usr/bin/ld: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o: in function `LapTimeServer::LapTimeServer()':
+[5.037s] lap_time_server.cpp:(.text+0x2ac): undefined reference to `LapTimeServer::handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+[5.037s] /usr/bin/ld: lap_time_server.cpp:(.text+0x310): undefined reference to `LapTimeServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+[5.037s] /usr/bin/ld: lap_time_server.cpp:(.text+0x374): undefined reference to `LapTimeServer::handle_goal(std::array<unsigned char, 16ul> const&, std::shared_ptr<custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > const>)'
+[5.059s] collect2: error: ld returned 1 exit status
+[5.061s] gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:212: measure_lap_time_server] Error 1
+[5.061s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+[5.061s] gmake: *** [Makefile:146: all] Error 2
+[5.063s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

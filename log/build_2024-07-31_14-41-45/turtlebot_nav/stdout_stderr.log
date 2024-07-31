@@ -1,0 +1,130 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[ 50%] Built target find_closest_wall_server
+[ 66%] Built target navigator_node
+[ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:19:71:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleMeasureLapTime[m[K’ was not declared in this scope
+   19 |     rclcpp_action::CancelResponse handle_cancel(const std::shared_ptr<[01;31m[KGoalHandleMeasureLapTime[m[K> goal_handle);
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:19:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     rclcpp_action::CancelResponse handle_cancel(const std::shared_ptr<GoalHandleMeasureLapTime[01;31m[K>[m[K goal_handle);
+      |                                                                                               [01;31m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:20:48:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleMeasureLapTime[m[K’ was not declared in this scope
+   20 |     void handle_accepted(const std::shared_ptr<[01;31m[KGoalHandleMeasureLapTime[m[K> goal_handle);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:20:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     void handle_accepted(const std::shared_ptr<GoalHandleMeasureLapTime[01;31m[K>[m[K goal_handle);
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:21:40:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleMeasureLapTime[m[K’ was not declared in this scope
+   21 |     void execute(const std::shared_ptr<[01;31m[KGoalHandleMeasureLapTime[m[K> goal_handle);
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:21:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     void execute(const std::shared_ptr<GoalHandleMeasureLapTime[01;31m[K>[m[K goal_handle);
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:75:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ is not a member of ‘[01m[Kcustom_interfaces[m[K’
+    7 |     this->action_server = rclcpp_action::create_server<custom_interfaces::[01;31m[Ksrv[m[K::MeasureLapTime>(
+      |                                                                           [01;31m[K^~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:75:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:159[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:6[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::srv[m[K’
+   27 | namespace [01;36m[Ksrv[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:7[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/measure_lap_time__struct.hpp:1015[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/measure_lap_time.hpp:7[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:9[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::srv[m[K’
+   31 | namespace [01;36m[Ksrv[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:42:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+    7 |     this->action_server = rclcpp_action::[01;31m[Kcreate_server<custom_interfaces::srv::MeasureLapTime>[m[K(
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:95:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(LapTimeServer*, const char [9], std::_Bind_helper<false, rclcpp_action::GoalResponse (LapTimeServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<const custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > >), LapTimeServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (LapTimeServer::*)(int), LapTimeServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (LapTimeServer::*)(int), LapTimeServer*, const std::_Placeholder<1>&>::type, rcl_action_server_options_t, rclcpp::CallbackGroup::SharedPtr&)[m[K’
+    7 |     this->action_server = [01;31m[Krclcpp_action::create_server<custom_interfaces::srv::MeasureLapTime>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+    8 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                                                  
+    9 | [01;31m[K        "lap_time",[m[K
+      |         [01;31m[K~~~~~~~~~~~[m[K                                                                            
+   10 | [01;31m[K        std::bind(&LapTimeServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   11 | [01;31m[K        std::bind(&LapTimeServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+   12 | [01;31m[K        std::bind(&LapTimeServer::handle_accepted, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   13 | [01;31m[K        rcl_action_server_get_default_options(),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                               
+   14 | [01;31m[K        service_cb_group[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~[m[K                                                                       
+   15 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K                                                                                          
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 |     this->action_server = [01;31m[Krclcpp_action::create_server<custom_interfaces::srv::MeasureLapTime>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+    8 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                                                  
+    9 | [01;31m[K        "lap_time",[m[K
+      |         [01;31m[K~~~~~~~~~~~[m[K                                                                            
+   10 | [01;31m[K        std::bind(&LapTimeServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   11 | [01;31m[K        std::bind(&LapTimeServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+   12 | [01;31m[K        std::bind(&LapTimeServer::handle_accepted, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   13 | [01;31m[K        rcl_action_server_get_default_options(),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                               
+   14 | [01;31m[K        service_cb_group[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~[m[K                                                                       
+   15 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K                                                                                          
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:7[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:7:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 |     this->action_server = [01;31m[Krclcpp_action::create_server<custom_interfaces::srv::MeasureLapTime>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+    8 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                                                  
+    9 | [01;31m[K        "lap_time",[m[K
+      |         [01;31m[K~~~~~~~~~~~[m[K                                                                            
+   10 | [01;31m[K        std::bind(&LapTimeServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   11 | [01;31m[K        std::bind(&LapTimeServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+   12 | [01;31m[K        std::bind(&LapTimeServer::handle_accepted, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   13 | [01;31m[K        rcl_action_server_get_default_options(),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                               
+   14 | [01;31m[K        service_cb_group[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~[m[K                                                                       
+   15 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K                                                                                          
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:19:20:[m[K [01;31m[Kerror: [m[K‘[01m[KClosestWallServer[m[K’ has not been declared
+   19 |         std::bind(&[01;31m[KClosestWallServer[m[K::odometry_callback, this, _1)
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis_thread[m[K’ has not been declared
+   23 |     [01;31m[Kthis_thread[m[K::sleep_for(chrono::seconds(30));
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:23:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+   23 |     this_thread::sleep_for([01;31m[Kchrono[m[K::seconds(30));
+      |                            [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

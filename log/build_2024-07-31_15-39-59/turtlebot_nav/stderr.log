@@ -1,0 +1,109 @@
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::make_shared[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+   36 |     std::[01;31m[Kmake_shared<MeasureLapTime::Feedback>[m[K feedback_msg;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+   26 |     [01;31m[Kfeedback_msg[m[K = std::make_shared<MeasureLapTime::Feedback>();
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:57:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   57 |     while ([01;31m[Kcmath[m[K::abs(x) > 0.1 && cmath::abs(y) > 0.1) continue;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:57:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   57 |     while (cmath::abs(x) > 0.1 && [01;31m[Kcmath[m[K::abs(y) > 0.1) continue;
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:58:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   58 |     while ([01;31m[Kcmath[m[K::abs(x) < 0.1 && cmath::abs(y) < 0.1) continue;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:58:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   58 |     while (cmath::abs(x) < 0.1 && [01;31m[Kcmath[m[K::abs(y) < 0.1) continue;
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:60:27:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’ and ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’)
+   60 |     execute_goal_handle = [01;31m[Kgoal_handle[m[K;
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>; _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>; std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> = std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >&][m[K’ (near match)
+  363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >*[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>][m[K’
+  374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:60:27:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kstd::auto_ptr<_Up>[m[K’ and ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’ have incompatible cv-qualifiers
+   60 |     execute_goal_handle = [01;36m[Kgoal_handle[m[K;
+      |                           [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>][m[K’
+  391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:60:27:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kstd::shared_ptr<_Tp>[m[K’ and ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’ have incompatible cv-qualifiers
+   60 |     execute_goal_handle = [01;36m[Kgoal_handle[m[K;
+      |                           [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>][m[K’
+  399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:60:27:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’ have incompatible cv-qualifiers
+   60 |     execute_goal_handle = [01;36m[Kgoal_handle[m[K;
+      |                           [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>][m[K’ (near match)
+  359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+      |                   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >*[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime>][m[K’ (near match)
+  383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:60:27:[m[K [01;31m[Kerror: [m[Kcannot bind rvalue reference of type ‘[01m[Kstd::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >&&[m[K’ to lvalue of type ‘[01m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >[m[K’
+   60 |     execute_goal_handle = [01;31m[Kgoal_handle[m[K;
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:66:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   66 |         while ([01;31m[Kcmath[m[K::abs(x) > 0.1 && cmath::abs(y) > 0.1) continue;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:66:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   66 |         while (cmath::abs(x) > 0.1 && [01;31m[Kcmath[m[K::abs(y) > 0.1) continue;
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:67:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   67 |         while ([01;31m[Kcmath[m[K::abs(x) < 0.1 && cmath::abs(y) < 0.1) continue;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:67:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmath[m[K’ has not been declared
+   67 |         while (cmath::abs(x) < 0.1 && [01;31m[Kcmath[m[K::abs(y) < 0.1) continue;
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:72:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurent_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_time[m[K’?
+   72 |         result->total_time = [01;31m[Kcurent_time[m[K - start_time;
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+      |                              [32m[Kcurrent_time[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K At global scope:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:77:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLapTImeServer[m[K’ has not been declared
+   77 | void [01;31m[KLapTImeServer[m[K::publish_elapsed_time() {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Kvoid publish_elapsed_time()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+   78 |     [01;31m[Kfeedback_msg[m[K->elapsed_time = current_time - start_time;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:78:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_time[m[K’ was not declared in this scope
+   78 |     feedback_msg->elapsed_time = [01;31m[Kcurrent_time[m[K - start_time;
+      |                                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:78:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kstrptime[m[K’?
+   78 |     feedback_msg->elapsed_time = current_time - [01;31m[Kstart_time[m[K;
+      |                                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                                 [32m[Kstrptime[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_goal_handle[m[K’ was not declared in this scope
+   79 |     [01;31m[Kexecute_goal_handle[m[K->publish_feedback(feedback_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

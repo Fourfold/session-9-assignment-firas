@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[ 66%] Built target find_closest_wall_server
+[ 66%] Built target navigator_node
+[ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Krclcpp_action::GoalResponse handle_goal(const GoalUUID&, std::shared_ptr<const custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:36:130:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   36 | rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID & uuid, std::shared_ptr<const MeasureLapTime::Goal> goal) {[01;35m[K}[m[K
+      |                                                                                                                                  [01;35m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:36:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 | rclcpp_action::GoalResponse handle_goal([01;35m[Kconst rclcpp_action::GoalUUID & uuid[m[K, std::shared_ptr<const MeasureLapTime::Goal> goal) {}
+      |                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:36:123:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 | rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID & uuid, [01;35m[Kstd::shared_ptr<const MeasureLapTime::Goal> goal[m[K) {}
+      |                                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Krclcpp_action::CancelResponse handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:37:107:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   37 | rclcpp_action::CancelResponse handle_cancel(const std::shared_ptr<GoalHandleMeasureLapTime> goal_handle) {[01;35m[K}[m[K
+      |                                                                                                           [01;35m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:37:93:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   37 | rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<GoalHandleMeasureLapTime> goal_handle[m[K) {}
+      |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Kvoid handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:38:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void handle_accepted([01;35m[Kconst std::shared_ptr<GoalHandleMeasureLapTime> goal_handle[m[K) {}
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:39:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   39 | void execute([01;35m[Kconst std::shared_ptr<GoalHandleMeasureLapTime> goal_handle[m[K) {}
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable measure_lap_time_server[0m
+/usr/bin/ld: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o: in function `LapTimeServer::LapTimeServer()':
+lap_time_server.cpp:(.text+0x2ac): undefined reference to `LapTimeServer::handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+/usr/bin/ld: lap_time_server.cpp:(.text+0x310): undefined reference to `LapTimeServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+/usr/bin/ld: lap_time_server.cpp:(.text+0x374): undefined reference to `LapTimeServer::handle_goal(std::array<unsigned char, 16ul> const&, std::shared_ptr<custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > const>)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:212: measure_lap_time_server] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

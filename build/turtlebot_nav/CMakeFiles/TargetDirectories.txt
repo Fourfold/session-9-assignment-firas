@@ -2,6 +2,7 @@
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/turtlebot_nav_uninstall.dir
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/navigator_node.dir
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/find_closest_wall_server.dir
+/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/measure_lap_time_server.dir
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/test.dir
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/edit_cache.dir
 /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::make_shared[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+   36 |     std::[01;31m[Kmake_shared<MeasureLapTime::Feedback>[m[K feedback_msg;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+   26 |     [01;31m[Kfeedback_msg[m[K = std::make_shared<MeasureLapTime::Feedback>();
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:72:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurent_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_time[m[K’?
+   72 |         result->total_time = [01;31m[Kcurent_time[m[K - start_time;
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+      |                              [32m[Kcurrent_time[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::publish_elapsed_time()[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+   78 |     [01;31m[Kfeedback_msg[m[K->elapsed_time = current_time - start_time;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

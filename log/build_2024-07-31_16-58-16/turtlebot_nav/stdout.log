@@ -1,0 +1,3 @@
+[ 66%] Built target find_closest_wall_server
+[ 66%] Built target navigator_node
+[ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m

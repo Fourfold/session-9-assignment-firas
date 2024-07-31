@@ -1,0 +1,8 @@
+/usr/bin/ld: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o: in function `LapTimeServer::LapTimeServer()':
+lap_time_server.cpp:(.text+0x2ac): undefined reference to `LapTimeServer::handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+/usr/bin/ld: lap_time_server.cpp:(.text+0x310): undefined reference to `LapTimeServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)'
+/usr/bin/ld: lap_time_server.cpp:(.text+0x374): undefined reference to `LapTimeServer::handle_goal(std::array<unsigned char, 16ul> const&, std::shared_ptr<custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > const>)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:212: measure_lap_time_server] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

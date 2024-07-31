@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[ 66%] Built target navigator_node
+[ 66%] Built target find_closest_wall_server
+[ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:12:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kusing[m[K’
+   12 | using MeasureLapTime = custom_interfaces::action::MeasureLapTime
+      |                                                                 [01;31m[K^[m[K
+      |                                                                 [32m[K;[m[K
+   13 | [32m[Kusing[m[K GoalHandleMeasureLapTime = rclcpp_action::ServerGoalHandle<MeasureLapTime>
+      | [32m[K~~~~~[m[K                                                            
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:3:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kusing[m[K’
+    3 | using MeasureLapTime = custom_interfaces::action::MeasureLapTime
+      |                                                                 [01;31m[K^[m[K
+      |                                                                 [32m[K;[m[K
+    4 | [32m[Kusing[m[K GoalHandleMeasureLapTime = rclcpp_action::ServerGoalHandle<MeasureLapTime>
+      | [32m[K~~~~~[m[K                                                            
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:30:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLapTimeServer[m[K’ has not been declared
+   30 | void [01;31m[KLapTimeServer[m[K::odometry_callback(const nav_msgs::msg::Odometry & odometry) {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Kvoid odometry_callback(const Odometry&)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   31 |     [01;31m[Kx[m[K = odometry.pose.pose.position.x;
+      |     [01;31m[K^[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   32 |     [01;31m[Ky[m[K = odometry.pose.pose.position.y;
+      |     [01;31m[K^[m[K
+      |     [32m[Kyn[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_time[m[K’ was not declared in this scope
+   33 |     [01;31m[Kcurrent_time[m[K = odometry.header.stamp.sec + 0.000000001 * odometry.header.stamp.nanosec;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:41:41:[m[K [01;31m[Kerror: [m[K‘[01m[KLapTimeServer[m[K’ was not declared in this scope
+   41 |     auto server_node = std::make_shared<[01;31m[KLapTimeServer[m[K>();
+      |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:41:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   41 |     auto server_node = [01;31m[Kstd::make_shared<LapTimeServer>()[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:1[m[K,
+                 from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:41:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   41 |     auto server_node = [01;31m[Kstd::make_shared<LapTimeServer>()[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,26 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target measure_lap_time_server[0m
+[0.038s] [ 33%] Built target find_closest_wall_server
+[0.038s] [ 66%] Built target navigator_node
+[0.041s] [ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[1.317s] In file included from [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:1[m[K:
+[1.317s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.h:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::make_shared[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[1.317s]    36 |     std::[01;31m[Kmake_shared<MeasureLapTime::Feedback>[m[K feedback_msg;
+[1.317s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.341s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In constructor ‘[01m[KLapTimeServer::LapTimeServer()[m[K’:
+[1.341s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+[1.341s]    26 |     [01;31m[Kfeedback_msg[m[K = std::make_shared<MeasureLapTime::Feedback>();
+[1.341s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.349s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[1.349s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:72:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurent_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_time[m[K’?
+[1.349s]    72 |         result->total_time = [01;31m[Kcurent_time[m[K - start_time;
+[1.349s]       |                              [01;31m[K^~~~~~~~~~~[m[K
+[1.349s]       |                              [32m[Kcurrent_time[m[K
+[1.355s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::publish_elapsed_time()[m[K’:
+[1.355s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_msg[m[K’ was not declared in this scope
+[1.355s]    78 |     [01;31m[Kfeedback_msg[m[K->elapsed_time = current_time - start_time;
+[1.355s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.671s] gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+[2.671s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+[2.671s] gmake: *** [Makefile:146: all] Error 2
+[2.673s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16

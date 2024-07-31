@@ -1,0 +1,15 @@
+[0.005s] Invoking command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
+[0.037s] [ 66%] Built target find_closest_wall_server
+[0.037s] [ 66%] Built target navigator_node
+[0.037s] [ 83%] [32mBuilding CXX object CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o[0m
+[1.442s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:[m[K In member function ‘[01m[Kvoid LapTimeServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[1.442s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:64:16:[m[K [01;31m[Kerror: [m[Kusing-declaration may not name namespace ‘[01m[Kstd::literals::chrono_literals[m[K’
+[1.442s]    64 |     using std::[01;31m[Kchrono_literals[m[K;
+[1.442s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.442s] [01m[K/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/src/turtlebot_nav/src/lap_time_server.cpp:66:9:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[1.442s]    66 |         [01;31m[K500ms[m[K,
+[1.442s]       |         [01;31m[K^~~~~[m[K
+[2.803s] gmake[2]: *** [CMakeFiles/measure_lap_time_server.dir/build.make:76: CMakeFiles/measure_lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+[2.803s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/measure_lap_time_server.dir/all] Error 2
+[2.803s] gmake: *** [Makefile:146: all] Error 2
+[2.805s] Invoked command in '/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav' returned '2': CMAKE_PREFIX_PATH=/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/custom_interfaces:/home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/install/turtlebot_nav:/opt/ros/humble /usr/bin/cmake --build /home/fourfold/dev/inmind sessions/inmind-session-9/session-9-assignment-firas/build/turtlebot_nav -- -j16 -l16
